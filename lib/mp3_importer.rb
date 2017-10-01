@@ -21,7 +21,6 @@ class MP3Importer
       song = Song.new_by_filename(file)
       #song.artist.save
     end
-    binding.pry
   end
 
 end
