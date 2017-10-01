@@ -17,7 +17,8 @@ class Song
     end
 
     new_song = Song.new(song_info[1])
-    @artist = Artist.find_or_create_by_name(song_info[0])
+    new_song.artist = Artist.find_or_create_by_name(song_info[0])
+    new
   end
 
 
