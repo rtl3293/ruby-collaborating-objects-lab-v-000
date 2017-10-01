@@ -8,7 +8,7 @@ class Song
 
   def self.new_by_filename(filename)
     song_info = filename.split(" - ")
-    song.info =
+    song_info[1] = song_info[1].delete_suffix!(".mp3")
 
 
 
