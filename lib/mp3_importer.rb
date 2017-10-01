@@ -15,6 +15,11 @@ class MP3Importer
       broken_file[1]
     end
   end
+
+  def import
+
+  end
+  
 end
 
 #
