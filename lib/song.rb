@@ -22,8 +22,8 @@ class Song
     new_song
   end
 
-  
+
 
 end
 
-Song.new_by_filename('Michael Jackson - Black or White - pop.mp3')
+#Song.new_by_filename('Michael Jackson - Black or White - pop.mp3')
