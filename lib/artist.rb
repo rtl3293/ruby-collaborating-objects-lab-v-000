@@ -42,7 +42,7 @@ class Artist
   end
 end
 
-Artist.new('Michael Jackson')
+artist = Artist.new('Michael Jackson')
 song_one = Song.new("Rock With You")
 song_two = Song.new("Smooth Criminal")
 artist.add_song(song_one)
