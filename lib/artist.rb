@@ -41,3 +41,9 @@ class Artist
     @songs.each {|song| puts song.name}
   end
 end
+
+
+song_one = Song.new("Rock With You")
+song_two = Song.new("Smooth Criminal")
+artist.add_song(song_one)
+artist.add_song(song_two)
