@@ -17,3 +17,5 @@ class Song
 
 
 end
+
+Song.new_by_filename('Michael Jackson - Black or White - pop.mp3')
