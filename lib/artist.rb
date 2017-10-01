@@ -31,6 +31,7 @@ class Artist
   end
 
   def songs
+    
   end
 
   def print_songs
