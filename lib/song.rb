@@ -1,5 +1,5 @@
 require 'pry'
-
+require_relative 'artist.rb'
 class Song
 
   attr_accessor :name, :artist
@@ -13,7 +13,7 @@ class Song
     song_info = filename.split("-")
 
     new_song = Song.new(song_info[1].strip)
-    new_song
+
   end
 
 
