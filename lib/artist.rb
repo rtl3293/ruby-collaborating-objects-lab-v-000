@@ -2,7 +2,7 @@ require 'pry'
 require_relative 'song.rb'
 
 class Artist
-  attr_accessor :name
+  attr_accessor :name, :songs
 
   @@all = []
   def initialize(name)
