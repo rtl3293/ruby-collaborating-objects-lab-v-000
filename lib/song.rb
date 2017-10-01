@@ -9,7 +9,6 @@ class Song
   end
 
   def self.new_by_filename(filename)
-    #binding.pry
     song_info = filename.split("-")
 
     song_info.each do |info|
@@ -18,6 +17,7 @@ class Song
 
     new_song = Song.new(song_info[1])
     new_song.artist = Artist.find_or_create_by_name(song_info[0])
+    binding.pry
     new_song
   end
 
