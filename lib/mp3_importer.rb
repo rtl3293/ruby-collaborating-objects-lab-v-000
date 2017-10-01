@@ -9,6 +9,8 @@ class MP3Importer
   end
 
   def files
-    Dir["#{@path}/**/*.mp3"]
+    array_of_files = Dir["#{@path}/**/*.mp3"]
+    normalized_files = array_of_files.collect do |file|
+      file.delete_prefix("#{@path}")
   end
 end
