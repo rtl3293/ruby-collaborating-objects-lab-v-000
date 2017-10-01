@@ -40,7 +40,6 @@ class Artist
 end
 
 artist = Artist.new('Michael Jackson')
-binding.pry
 song_one = Song.new("Rock With You")
 song_two = Song.new("Smooth Criminal")
 artist.add_song(song_one)
