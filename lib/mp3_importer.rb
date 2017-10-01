@@ -11,7 +11,7 @@ class MP3Importer
   def files
     array_of_files = Dir["#{@path}/**/*.mp3"]
     normalized_files = array_of_files.collect do |file|
-      file.delete_prefix("#{@path}")
+      file.chomp("#{@path}")
     end
   end
 end
