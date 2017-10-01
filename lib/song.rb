@@ -12,8 +12,12 @@ class Song
     #binding.pry
     song_info = filename.split("-")
 
-    new_song = Song.new(song_info[1].strip)
+    song_info.each do |info|
+      info.strip!
+    end
 
+    new_song = Song.new(song_info[1].strip)
+    @artist = Artist.find_or_create_by_name(song)
   end
 
 
