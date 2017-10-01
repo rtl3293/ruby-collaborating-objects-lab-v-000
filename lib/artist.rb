@@ -1,3 +1,5 @@
+require_relative 'song.rb'
+
 class Artist
   attr_accessor :name
   @songs = []
@@ -31,7 +33,7 @@ class Artist
   end
 
   def songs
-    
+
   end
 
   def print_songs
