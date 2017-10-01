@@ -11,7 +11,7 @@ class Song
     song_info[1] = song_info[1]
 
     new_song = Song.new()
-
+  end
 
 
 end
