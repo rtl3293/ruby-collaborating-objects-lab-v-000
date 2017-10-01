@@ -2,10 +2,11 @@ require 'pry'
 require_relative 'artist.rb'
 class Song
 
-  attr_accessor :name, :artist
+  attr_accessor :name, :artist_name
 
   def initialize(name)
     @name = name
+
   end
 
   def self.new_by_filename(filename)
