@@ -16,8 +16,8 @@ class Song
       info.strip!
     end
 
-    new_song = Song.new(song_info[1].strip)
-    @artist = Artist.find_or_create_by_name(song)
+    new_song = Song.new(song_info[1])
+    @artist = Artist.find_or_create_by_name(song_info[0])
   end
 
 
